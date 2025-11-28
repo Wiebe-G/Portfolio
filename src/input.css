@@ -2,5 +2,5 @@
 
 /* TODO: zorg ervoor dat ook echt max width 33% van het scherm is */
 .ProjectDiv {
-    @apply mx-5 h-52 block max-w-1/3 border rounded-md bg-gray-200;
+    @apply mx-5 h-52 block w-2/5 border rounded-md bg-gray-200 justify-center;
 }

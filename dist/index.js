@@ -20,16 +20,19 @@ function FetchGithubRepos() {
         for (let i = 0; i < Repos.length; i++) {
             let Repo = document.createElement('div');
             let RepoTitleDisplay = document.createElement('h1');
+            RepoTitleDisplay.classList.add('font-bold');
             let RepoDescDisplay = document.createElement('p');
-            let RepoTitle = Repos[i].Name;
+            let RepoTitle = Repos[i].name;
             RepoTitleDisplay.textContent = RepoTitle;
             let RepoDesc = Repos[i].description;
             RepoDescDisplay.textContent = RepoDesc;
-            Repo === null || Repo === void 0 ? void 0 : Repo.appendChild(RepoTitleDisplay);
-            Repo === null || Repo === void 0 ? void 0 : Repo.appendChild(RepoDescDisplay);
+            Repo.appendChild(RepoTitleDisplay);
+            Repo.appendChild(RepoDescDisplay);
             Repo.classList.add('ProjectDiv');
+            Repo.addEventListener('click', () => {
+                window.open(Repos[i].html_url);
+            });
             ReposDisplay === null || ReposDisplay === void 0 ? void 0 : ReposDisplay.appendChild(Repo);
-            console.log(Repos[i]);
         }
     });
 }
