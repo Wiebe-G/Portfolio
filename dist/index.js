@@ -37,3 +37,14 @@ function FetchGithubRepos() {
     });
 }
 FetchGithubRepos();
+const ShowMenu = document.getElementById('ShowMenu');
+const Menu = document.getElementById('Menu');
+ShowMenu.addEventListener('click', () => {
+    Menu === null || Menu === void 0 ? void 0 : Menu.classList.toggle('hidden');
+    // zorg ervoor dat als het zichtbaar is, de achtergrond wazig wordt en de lijst meer in focus komt
+});
+const DarkModeButton = document.getElementById('DarkModeButton');
+DarkModeButton === null || DarkModeButton === void 0 ? void 0 : DarkModeButton.addEventListener('click', () => {
+    console.log(1);
+    document.documentElement.classList.toggle('dark');
+});

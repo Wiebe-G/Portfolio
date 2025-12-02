@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* TODO: zorg ervoor dat ook echt max width 33% van het scherm is */
 .ProjectDiv {
-    @apply mx-5 h-52 block w-2/5 border rounded-md bg-sky-200 justify-center mt-1;
+    @apply mx-5 h-11/12 w-1/2 border-4 rounded-md bg-sky-200 dark:bg-sky-500 justify-center mt-1;
 }

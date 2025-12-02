@@ -2,25 +2,34 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css">
     <title>
         Portfolio Wiebe
     </title>
-    <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body>
-    <div class="bg-sky-300 w-screen h-full">
-        <div class="bg-gray-400 h-1/14 flex justify-center items-center text-white ">Projecten</div>
-        <div class="max-w-screen grid grid-cols-3 text-center place-items-center" id="ReposDisplay">
-            <div class="ProjectDiv border-2">
-                <h1 class="font-bold">Title</h1>
-                <p>Description</p>
-            </div>
+    <div class="bg-sky-300 dark:bg-blue-900 w-full h-full">
+        <div class="h-1/14 w-full bg-gray-400 dark:bg-gray-600 text-white flex justify-between items-center relative">
+            <p class="mx-4" id="ShowMenu">Andere pagina's</p>
+            <p class="absolute left-1/2 transform -translate-x-1/2">Projecten</p>
+            <p class="mx-4" id="DarkModeButton">Dark mode</p>
         </div>
 
+
+        <div class="max-w-screen h-screen flex flex-col text-center place-items-center " id="ReposDisplay">
+        </div>
+
+        <div class="absolute inset-0 z-40 mx-4 mt-5 hidden text-black dark:text-white" id="Menu">
+            <ol>
+                <li>Over mij</li>
+                <li>Projecten (deze pagina)</li>
+                <li>Test </li>
+                <li>Test</li>
+            </ol>
+        </div>
     </div>
-
-
     <script src="./dist/index.js"></script>
 </body>
 
