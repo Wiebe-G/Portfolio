@@ -18,13 +18,31 @@
         </div>
 
 
-        <div class="max-w-screen h-screen flex flex-col text-center place-items-center " id="ReposDisplay">
+        <div class="max-w-screen h-screen flex text-center justify-center items-center" id="OverMij">
+            <div class="rounded-2xl bg-gray-300 w-4/5 h-4/5 relative 
+            text-center grid grid-cols-2 grid-rows-1 ">
+                <div id="LeftHalf">
+                    <div class="flex flex-col justify-center items-center h-full">
+                        <div class="rounded-3xl align-middle 
+                        bg-neutral-400 h-4/5 w-1/2">
+                            <h1 class="font-bold">Naam</h1>
+                            <p>Beschrijving</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="RightHalf">Rechterhelft</div>
+            </div>
         </div>
+
+        <div class="max-w-screen h-screen flex flex-col text-center place-items-center" id="ReposDisplay">
+            <h1 class="bg-gray-300 rounded-2xl font-bold w-4/5">Projecten</h1>
+        </div>
+
 
         <div class="absolute inset-0 z-40 mx-4 mt-5 hidden text-black dark:text-white" id="Menu">
             <ol>
                 <li>Over mij</li>
-                <li>Projecten (deze pagina)</li>
+                <li><a href="./index.html#ReposDisplay">Projecten (deze pagina)</a></li>
                 <li>Test </li>
                 <li>Test</li>
             </ol>

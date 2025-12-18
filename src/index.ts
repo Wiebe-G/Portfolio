@@ -26,7 +26,6 @@ async function FetchGithubRepos() {
             window.open(Repos[i].html_url);
         })
         ReposDisplay?.appendChild(Repo)
-
     }
 }
 

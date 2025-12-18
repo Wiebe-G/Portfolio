@@ -10,6 +10,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 let APIUrl = "https://api.github.com/users/Wiebe-G/repos";
 const ReposDisplay = document.getElementById('ReposDisplay');
+function ShowProjects() {
+    ReposDisplay === null || ReposDisplay === void 0 ? void 0 : ReposDisplay.classList.remove('hidden');
+}
 function FetchGithubRepos() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch(APIUrl);
